@@ -29,7 +29,7 @@ public class DocumentClient {
         cc.getClasses().add(JacksonJsonProvider.class);
         Client client = Client.create(cc);
         client.addFilter(new LoggingFilter());
-        return client.resource("http://localhost:8082/trackStuff/v1/");
+        return client.resource("http://localhost:8082/download/v1/");
     }
 
     public static void main(String[] args) throws Exception {
